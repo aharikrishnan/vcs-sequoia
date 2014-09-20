@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @wholeseller.name %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @wholeseller.phone %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @wholeseller.location_id %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%=h @wholeseller.rating %>
+</p>
+
+
+<%= link_to 'Edit', edit_wholeseller_path(@wholeseller) %> |
+<%= link_to 'Back', wholesellers_path %>

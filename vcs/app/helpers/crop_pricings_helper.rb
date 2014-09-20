@@ -1,0 +1,2 @@
+module CropPricingsHelper
+end

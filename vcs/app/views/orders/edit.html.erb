@@ -1,0 +1,32 @@
+<h1>Editing order</h1>
+
+<% form_for(@order) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :crop_id %><br />
+    <%= f.text_field :crop_id %>
+  </p>
+  <p>
+    <%= f.label :farmer_id %><br />
+    <%= f.text_field :farmer_id %>
+  </p>
+  <p>
+    <%= f.label :wholeseller_id %><br />
+    <%= f.text_field :wholeseller_id %>
+  </p>
+  <p>
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </p>
+  <p>
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @order %> |
+<%= link_to 'Back', orders_path %>

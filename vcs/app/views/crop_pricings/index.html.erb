@@ -1,0 +1,26 @@
+<h1>Listing crop_pricings</h1>
+
+<table>
+  <tr>
+    <th>Location</th>
+    <th>Wholeseller</th>
+    <th>Price</th>
+    <th>Crop</th>
+  </tr>
+
+<% @crop_pricings.each do |crop_pricing| %>
+  <tr>
+    <td><%=h crop_pricing.location_id %></td>
+    <td><%=h crop_pricing.wholeseller_id %></td>
+    <td><%=h crop_pricing.price %></td>
+    <td><%=h crop_pricing.crop_id %></td>
+    <td><%= link_to 'Show', crop_pricing %></td>
+    <td><%= link_to 'Edit', edit_crop_pricing_path(crop_pricing) %></td>
+    <td><%= link_to 'Destroy', crop_pricing, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New crop_pricing', new_crop_pricing_path %>

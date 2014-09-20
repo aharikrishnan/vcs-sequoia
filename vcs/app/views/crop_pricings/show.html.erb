@@ -1,0 +1,23 @@
+<p>
+  <b>Location:</b>
+  <%=h @crop_pricing.location_id %>
+</p>
+
+<p>
+  <b>Wholeseller:</b>
+  <%=h @crop_pricing.wholeseller_id %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @crop_pricing.price %>
+</p>
+
+<p>
+  <b>Crop:</b>
+  <%=h @crop_pricing.crop_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_crop_pricing_path(@crop_pricing) %> |
+<%= link_to 'Back', crop_pricings_path %>

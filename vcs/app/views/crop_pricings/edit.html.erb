@@ -1,0 +1,28 @@
+<h1>Editing crop_pricing</h1>
+
+<% form_for(@crop_pricing) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :location_id %><br />
+    <%= f.text_field :location_id %>
+  </p>
+  <p>
+    <%= f.label :wholeseller_id %><br />
+    <%= f.text_field :wholeseller_id %>
+  </p>
+  <p>
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    <%= f.label :crop_id %><br />
+    <%= f.text_field :crop_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @crop_pricing %> |
+<%= link_to 'Back', crop_pricings_path %>

@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @crop.name %>
+</p>
+
+<p>
+  <b>Govt price:</b>
+  <%=h @crop.govt_price %>
+</p>
+
+
+<%= link_to 'Edit', edit_crop_path(@crop) %> |
+<%= link_to 'Back', crops_path %>

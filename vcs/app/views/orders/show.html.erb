@@ -1,0 +1,28 @@
+<p>
+  <b>Crop:</b>
+  <%=h @order.crop_id %>
+</p>
+
+<p>
+  <b>Farmer:</b>
+  <%=h @order.farmer_id %>
+</p>
+
+<p>
+  <b>Wholeseller:</b>
+  <%=h @order.wholeseller_id %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @order.status %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @order.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

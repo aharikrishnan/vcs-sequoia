@@ -1,0 +1,26 @@
+<h1>Listing wholesellers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>Location</th>
+    <th>Rating</th>
+  </tr>
+
+<% @wholesellers.each do |wholeseller| %>
+  <tr>
+    <td><%=h wholeseller.name %></td>
+    <td><%=h wholeseller.phone %></td>
+    <td><%=h wholeseller.location_id %></td>
+    <td><%=h wholeseller.rating %></td>
+    <td><%= link_to 'Show', wholeseller %></td>
+    <td><%= link_to 'Edit', edit_wholeseller_path(wholeseller) %></td>
+    <td><%= link_to 'Destroy', wholeseller, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New wholeseller', new_wholeseller_path %>
