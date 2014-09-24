@@ -1,3 +1,2 @@
-class Farmer < ActiveRecord::Base
-  validates_presence_of :name, :phone
+class Farmer < User
 end
